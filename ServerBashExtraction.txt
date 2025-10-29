@@ -1,0 +1,17 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt install python3 python3-pip git -y
+sudo apt install python3.12-venv
+python3 -m venv myenv
+source myenv/bin/activate
+pip install pandas
+pip install Flask
+pip install requests
+nano Server.py #insert server side code
+nano Client.py #insert client side code
+python Server.py
+source myenv/bin/activate #run this command on a new aws terminal
+python Client.py #on the new terminal run this
+scp -i ~/Downloads/”enter aws keypair” ubuntu@”enter ec2 public ip
+address”:~/rudy_data_0.csv ~/Downloads #enter this into local computer terminal to
+receive csv data

@@ -14,19 +14,10 @@ This project was originally created in 2024 to analyze web traffic patterns and 
 -Client simulation supporting multiple concurrent threads for traffic generation.
 Differentiation between regular users, slow users, and R.U.D.Y. attackers.
 
-🧩 Project Structure
-Rudy-sim-logger/
-│
-├── Server.py        # Flask server handling incoming simulated traffic and logging
-├── Client.py        # Client simulation generating mixed user and attack requests
-├── requirements.txt # Python dependencies
-├── README.md        # Documentation
-└── data/            # Folder where generated CSV logs can be stored
-
 🚀 Setup and Usage
 1. Install Dependencies
 
-Run these commands in your terminal:
+Run these commands in an AWS EC2 ubuntu terminal instance:
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip git -y

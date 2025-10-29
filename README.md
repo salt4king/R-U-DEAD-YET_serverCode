@@ -15,7 +15,7 @@ This project was originally created in 2024 to analyze web traffic patterns and 
 Differentiation between regular users, slow users, and R.U.D.Y. attackers.
 
 🚀 Setup and Usage
-1. Install Dependencies
+1. Install Dependencies (See ServerBashExtraction.txt for more info)
 
 Run these commands in an AWS EC2 ubuntu terminal instance:
 

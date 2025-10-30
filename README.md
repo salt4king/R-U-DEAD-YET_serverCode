@@ -1,6 +1,6 @@
 # R-U-DEAD-YET_Sim_Logger
 
-![YouAHacker](https://imgur.com/gallery/anime-hackers-EGqmq)
+![Image](https://github.com/user-attachments/assets/9a8a3067-43df-4215-89a5-b039ed730d0f)
 
 
 📖 Overview

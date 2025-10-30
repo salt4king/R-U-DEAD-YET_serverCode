@@ -1,6 +1,3 @@
-
-
-# 5) Fixed `Server.py` (clean, indented, safer, graceful shutdown)
 #Copy this into `Server.py` 
 
 from flask import Flask, request

@@ -3,13 +3,13 @@
 ![Image](https://github.com/user-attachments/assets/9a8a3067-43df-4215-89a5-b039ed730d0f)
 
 
-📖 Overview
+## 📖 Overview
 
 Rudy-sim-logger is a Python-based client-server simulation project that mimics realistic web traffic patterns, including slow users and simulated R.U.D.Y. (R-U-Dead-Yet) denial-of-service attacks. The server logs requests with metadata (IP, endpoint, headers, packet sizes, and timing) into dynamically named CSV files. The client simulates various user behaviors, such as normal browsing, slow requests, and coordinated R.U.D.Y. attacks.
 
 This project was originally created in 2024 to analyze web traffic patterns and test server resilience under stress.
 
-⚙️ Features
+## ⚙️ Features
 -Flask-based server that logs every request with metadata.
 -Simulated user agents and endpoints to mimic realistic browser behavior.
 -Automatic generation of slow or compromised traffic patterns.
@@ -17,7 +17,7 @@ This project was originally created in 2024 to analyze web traffic patterns and 
 -Client simulation supporting multiple concurrent threads for traffic generation.
 Differentiation between regular users, slow users, and R.U.D.Y. attackers.
 
-🚀 Setup and Usage
+## 🚀 Setup and Usage
 1. Install Dependencies (See ServerBashExtraction.txt for more info)
 
 Run these commands in an AWS EC2 ubuntu terminal instance:
@@ -42,9 +42,9 @@ python Client.py
 
 The client will start sending mixed traffic patterns to the Flask server — including normal, slow, and R.U.D.Y.-style requests.
 
-🧠 How It Works
+## 🧠 How It Works
 
-Server Side 
+Server Side:
 
 
 Receives requests from multiple endpoints (/endpoint-1, /endpoint-2, /endpoint-3, /rudy-endpoint).
@@ -55,7 +55,8 @@ Randomly introduces outliers and slow requests for simulation realism.
 
 Writes logged data to CSV in real-time using a background thread.
 
-Client Side 
+
+Client Side: 
 
 Simulates users making requests with randomized user-agents.
 
@@ -82,7 +83,7 @@ python Server.py  # start server
 python Client.py  # run simulation
 scp -i ~/Downloads/<aws_keypair> ubuntu@<ec2_public_ip>:~/rudy_data_0.csv ~/Downloads
 
-📊 Example Output
+## 📊 Example Output
 
 Each simulation produces CSV logs similar to this:
 
@@ -93,7 +94,7 @@ Each simulation produces CSV logs similar to this:
 | 103.24.56.8  | /rudy-endpoint | 42.56     | {User-Agent: ...} | 1697213950 | 2.33        | True     | True         |
 
 
-🧰 Requirements
+## 🧰 Requirements
 
 Python 3.10 or higher
 
@@ -113,7 +114,7 @@ Flask>=2.0.0
 pandas>=1.3.0
 requests>=2.25.0
 
-🔒 Security Disclaimer
+## 🔒 Security Disclaimer
 
 ⚠️ This project is intended strictly for educational and research purposes.
 Do not deploy or run any simulated attack traffic (including R.U.D.Y.) on external or production systems.
